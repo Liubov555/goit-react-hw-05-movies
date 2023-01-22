@@ -1,14 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import * as API from '../../API/Api';
-import { useParams } from "react-router-dom";
+
 
 const CastMovie = () => {
     const [castMovie, setCastMovie] = useState(null);
-    const { movieID } = useParams();
+    const { movieId } = useParams();
 
     useEffect(() => {
-        API.getMovieCast(movieID).then(data => setCastMovie(data)).catch(console.log);
-    }, [movieID]);
+        API.getMovieCast(movieId)
+            .then(data => setCastMovie(data))
+            .catch(console.log);
+    }, [movieId]);
 
     if (!castMovie) {
         return;

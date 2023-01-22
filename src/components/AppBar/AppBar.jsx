@@ -1,8 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+
 
 const navItems = [
     { href: '/', text: 'Home' },
-    { href: 'movies', text: 'Movies' }
+    { href: 'movies', text: 'Movies' },
 ];
 
 const AppBar = () => {
