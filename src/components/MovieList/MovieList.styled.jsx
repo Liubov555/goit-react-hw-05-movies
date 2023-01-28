@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Link } from 'react-router-dom';
 
 export const Title = styled.h1`
     margin-bottom: 25px;
@@ -11,7 +12,7 @@ export const Item = styled.li`
     }
 `;
 
-export const Link = styled.a`
+export const LinkItem = styled(Link)`
     color: #888888;
 
  &:hover, :focus{
