@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { BsArrowLeftShort } from 'react-icons/bs';
 import { Container, LinkItem } from './GoBackButton.styled';
 
