@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const KEY = '6bc047b88f669d1fb86574f06381005d93d3517a';
+const KEY = '2e428f3596d4dd04f259d44f78cbc4cd';
 const BASE_URL = 'https://api.themoviedb.org/3/';
 const URL_POSTER = 'https://image.tmdb.org/t/p/w500';
 const URL_BACKDROP = 'https://image.tmdb.org/t/p/original/';

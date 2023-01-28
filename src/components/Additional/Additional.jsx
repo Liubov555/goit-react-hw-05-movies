@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { Title, Item } from './Additional.styled';
 
 
 const AdditionalItems = [
@@ -10,14 +11,14 @@ const AdditionalItems = [
 const Additional = ({ location }) => {
     return (
         <div>
-            <h2>Addititonal information</h2>
+            <Title>Addititonal information</Title>
             <ul>
                 {AdditionalItems.map(({ href, text }) => (
-                    <li key={href}>
+                    <Item key={href}>
                         <Link to={href} state={{ from: location }}>
                             {text}
                         </Link>
-                    </li>
+                    </Item>
                 ))}
             </ul>
             <hr />

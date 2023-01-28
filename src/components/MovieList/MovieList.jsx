@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { Title, List, Item } from './MovieList.styled';
 
 
 const MoviesList = ({ movies, titlePage = null }) => {
@@ -7,20 +8,20 @@ const MoviesList = ({ movies, titlePage = null }) => {
 
     return (
         <>
-            {titlePage && <h2>{titlePage}</h2>}
+            {titlePage && <Title>{titlePage}</Title>}
 
-            <ul>
+            <List>
                 {movies.map(({ id, title, name }) => (
-                    <li key={id}>
+                    <Item key={id}>
                         <Link
                             to={`/movies/${id}`}
                             state={{ from: location }}
                         >
                             {title || name}
                         </Link>
-                    </li>
+                    </Item>
                 ))}
-            </ul>
+            </List>
         </>
     );
 };

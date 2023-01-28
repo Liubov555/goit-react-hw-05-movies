@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { FilmCard } from './InfoMovie.styled';
 
 
 const InfoMovie = ({ movie }) => {
@@ -24,7 +25,7 @@ const InfoMovie = ({ movie }) => {
 
     return (
         <>
-            <div>
+            <FilmCard>
                 <img
                     src={imgUrl}
                     alt={title || name}
@@ -43,7 +44,7 @@ const InfoMovie = ({ movie }) => {
                     <h3>Genres</h3>
                     <p>{genres.map(({ name }) => name).join(', ')}</p>
                 </div>
-            </div>
+            </FilmCard>
             <hr />
         </>
     );

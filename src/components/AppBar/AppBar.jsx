@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { Header } from './AppBar.styled';
 
 
 const navItems = [
@@ -8,7 +9,7 @@ const navItems = [
 
 const AppBar = () => {
     return (
-        <header>
+        <Header>
             <nav>
                 {navItems.map(({ href, text }) => (
                     <NavLink
@@ -19,7 +20,7 @@ const AppBar = () => {
                     </NavLink>
                 ))}
             </nav>
-        </header>
+        </Header>
     );
 };
 
